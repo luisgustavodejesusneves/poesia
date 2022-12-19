@@ -1,0 +1,100 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root{
+    --font1: verdana, geneva, tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--font1);
+    font-size: 1em;
+}
+
+header{
+    background-color: rgb(24, 32, 187);
+    color: white;
+    text-align: center;
+}
+
+header>h1{
+    padding-top: 50px;
+    font-variant: small-caps;/*serve para mudar a fonte do h1*/
+    font-family: var(--font2);
+    font-size: 10vw; /* quer dizer que a letra vai ocupar 10% da viwport, se ajustando autmaticamente a larguara da tela*/
+}
+
+header>p{
+    padding-bottom: 50px;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3vw; /* quer dizer que a letra vai ocupar 10% da viwport, se ajustando autmaticamente a larguara da tela*/
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(53, 52, 52);
+    color: white;
+    text-shadow: 2px 2px 0px black;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed; /*para dar o efeito paralax*/
+}
+
+section.imagem>p{
+    
+    display: inline-block; /*serve para o texto se adaptar ao bacground-color que você colocou*/
+    padding: 10px;
+}
+
+section#imagem01{
+    background-image: url('imagens/pexels-eberhard-grossgasteiger-844297.jpg');
+    background-position: center right;
+    background-size: cover; /*serve para a imagem de fundo aparecer por completo*/
+}
+
+section#imagem02{
+    background-image: url('imagens/pexels-pixabay-159866.jpg');  
+    background-position: center right;
+    background-size: cover; 
+}
+
+footer{
+    background-color: rgba(108, 102, 102, 0.759);
+    color: white;
+    text-align: center;
+}
+
+footer > a{
+    color: white;
+    text-decoration: none;
+}
+
+footer > a:hover{
+    text-decoration: dashed;
+    color:  black;
+}
